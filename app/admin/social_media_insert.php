@@ -5,6 +5,7 @@ include 'includes/slugify.php';
 
 if (isset($_POST['post'])) {
     $content = $_POST['postContent'];
+    $title= $_POST['postTitle'];
     $filename = $_FILES['postImage']['name'];
     $conn = $pdo->open();
 
@@ -48,8 +49,8 @@ if (isset($_POST['post'])) {
 
         move_uploaded_file($_FILES['postImage']['tmp_name'], $folderPath . $new_filename . '.' . $ext);
 
-        $stmt = $conn->prepare("INSERT INTO social_post (content,image) VALUES (:content,:image)");
-        $stmt->execute(['content' => $content, 'image' => $folderPath . $new_filename . '.' . $ext]);
+        $stmt = $conn->prepare("INSERT INTO social_post (content,image,title) VALUES (:content,:image,:title)");
+        $stmt->execute(['content' => $content, 'image' => $folderPath . $new_filename . '.' . $ext,'title'=>$title]);
         $_SESSION['success'] = 'post  successfully posted';
     } catch (PDOException $e) {
         $_SESSION['error'] = $e->getMessage();

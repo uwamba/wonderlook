@@ -71,6 +71,10 @@ if (isset($_GET['category'])) {
                     <label for="postContent" class="form-label">Post Content</label>
                     <textarea class="form-control" id="postContent" name="postContent" rows="5" placeholder="Write something..."></textarea>
                   </div>
+                  <div class="mb-3">
+                    <label for="postTitle" class="form-label">Post Title</label>
+                    <input type="text" class="form-control" id="postTitle" name="postTitle"  placeholder="Write Title"></input>
+                  </div>
 
                   <!-- Photo Upload -->
                   <div class="mb-3">

@@ -1,0 +1,7 @@
+{
+    "require": {
+        "happyr/linkedin-api-client": "^0.6.3",
+        "facebook/graph-sdk": "^5.1",
+        "abraham/twitteroauth": "^7.0"
+    }
+}

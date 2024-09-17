@@ -64,23 +64,29 @@ $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <?php if ($rows): ?>
             <div class="row">
                 <?php foreach ($rows as $row) { ?>
-                    <div class="col-md-4 mb-4">
+                    <div class="row"></div>
+                    <div class="col-md-6 mb-4">
                         <div class="card h-100">
                             <!-- Display the image if it exists -->
                             <?php if (!empty($row['image'])): ?>
                                 <img src="<?php echo $row['image']; ?>" class="card-img-top" ?>
                             <?php endif; ?>
-                            <div class="card-body">
-                                <p class="card-text"><?php echo substr($row['content'], 0, 100) . '...'; ?></p>
-                                <a href="view_post.php?id=<?php echo $row['id']; ?>" class="btn btn-primary">Read More</a>
-                            </div>
                             <div class="card-footer text-muted">
                                 Posted on: <?php echo date('F j, Y', strtotime($row['created_at'])); ?>
                             </div>
+                            <div class="card-body">
+                                <p class="card-text"><?php echo substr($row['content'], 10, 300) . '...'; ?></p>
+                                <a href="view_post.php?id=<?php echo $row['id']; ?>" class="btn btn-primary"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="view_post.php?id=<?php echo $row['id']; ?>" class="btn btn-primary"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="view_post.php?id=<?php echo $row['id']; ?>" class="btn btn-primary"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                <a href="view_post.php?id=<?php echo $row['id']; ?>" class="btn btn-primary"><i class="fa fa-twitter" aria-hidden="true"></i></i></a>
+                            </div>
+                            
                         </div>
                     </div>
+                    </div>
                 <?php }; ?>
-            </div>
+            
         <?php else: ?>
             <p>No posts found.</p>
         <?php endif; ?>
