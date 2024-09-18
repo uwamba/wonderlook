@@ -57,7 +57,7 @@
 							$catid='1';
 							$now = date('Y-m-d');
 		       			 
-						    $stmt = $conn->prepare("");
+						    $stmt = $conn->prepare("select * from products");
 						    $stmt->execute(['now'=>$now]);
 						    $count=6;
 						 foreach ($stmt as $row) {

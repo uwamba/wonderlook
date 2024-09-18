@@ -1,10 +1,12 @@
 <?php
 
 Class Database{
- 
 	private $server = "mysql:host=localhost;dbname=wonderlo_shop";
-	private $username = "wonderlo_post";
+	private $username = "wonderlo_shop_user";
 	private $password = "Password@2024";
+	//private $server = "mysql:host=localhost;dbname=shop";
+	//private $username = "root";
+	//private $password = "";
 	private $options  = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,);
 	protected $conn;
  	

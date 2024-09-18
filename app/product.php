@@ -1,8 +1,11 @@
 <?php include 'includes/session.php'; ?>
 <?php
 	$conn = $pdo->open();
-
-	$slug = $_GET['product'];
+	$slug;
+	if(isset($_GET['product'])){
+		$slug = $_GET['product'];
+	}
+	
     //$slug='dell-inspiron-15-7000-15-6';
 
 	try{
