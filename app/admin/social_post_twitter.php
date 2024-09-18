@@ -16,7 +16,8 @@ $request->setHeader(array(
 ));
 $mediaFile = 'https://wonderlook.rw/app/admin/post_img/post2.jpeg';
 $request->addPostParameter([
-    'media' => new CURLFile($mediaFile)
+    'media' => new CURLFile($mediaFile),
+    "text"=> "Hello everyone!"
 ]);
 $mediaId ="";
 try {
