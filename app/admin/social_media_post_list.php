@@ -79,7 +79,7 @@ $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
                                 <a href="view_post.php?id=<?php echo $row['id']; ?>" class="btn btn-primary"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                                 <a href="view_post.php?id=<?php echo $row['id']; ?>" class="btn btn-primary"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                                 <a href="view_post.php?id=<?php echo $row['id']; ?>" class="btn btn-primary"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                                <a href="view_post.php?id=<?php echo $row['id']; ?>" class="btn btn-primary"><i class="fa fa-twitter" aria-hidden="true"></i></i></a>
+                                <a href="social_post_twitter.php?id=<?php echo $row['id']; ?>" class="btn btn-primary"><i class="fa fa-twitter" aria-hidden="true"></i></i></a>
                             </div>
                             
                         </div>
