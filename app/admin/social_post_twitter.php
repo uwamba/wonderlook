@@ -14,10 +14,17 @@ $request->setHeader(array(
   'Authorization' => 'OAuth oauth_consumer_key="QTibt0PJtKFHi8gk19X9MSXE6",oauth_token="1832316580367101952-0AdQIS4EGcsEVMurYiTxbzZqM0n8O7",oauth_signature_method="HMAC-SHA1",oauth_timestamp="1726676931",oauth_nonce="ZGGDNWzydoG",oauth_version="1.0",oauth_signature="bCaL8td%2BgGnn4VU00tZGj2WjH4A%3D"',
   'Cookie' => 'guest_id=v1%3A172667623597701603'
 ));
-$request->setBody('{"text": "Hello everyone!"}');
+$mediaFile = 'post_img/post2.jpeg';
+
+$request->addPostParameter([
+    'text' => 'Hello everyone !!',  // Text message
+    'media' => new CURLFile($mediaFile) // Use CURLFile for media upload
+]);
+
+// Attach the multipart body to the request
 try {
   $response = $request->send();
-  if ($response->getStatus() == 200) {
+  if ($response->getStatus() == 201) {
     echo $response->getBody();
   }
   else {
