@@ -2,10 +2,6 @@
 require '../vendor/autoload.php';
 use HTTP_Request2;
 
-
-
-
-
 $mediaUploadUrl = 'https://upload.twitter.com/1.1/media/upload.json';
 $request2 = new HTTP_Request2($mediaUploadUrl);
 $request2->setMethod(HTTP_Request2::METHOD_POST);
