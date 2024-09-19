@@ -15,6 +15,10 @@ class ComposerStaticInit2624fb338757c23e67c31c02b98b9e2e
         array (
             'React\\Promise\\' => 14,
         ),
+        'N' => 
+        array (
+            'Noweh\\TwitterApi\\' => 17,
+        ),
         'H' => 
         array (
             'Happyr\\LinkedIn\\' => 16,
@@ -43,6 +47,10 @@ class ComposerStaticInit2624fb338757c23e67c31c02b98b9e2e
         'React\\Promise\\' => 
         array (
             0 => __DIR__ . '/..' . '/react/promise/src',
+        ),
+        'Noweh\\TwitterApi\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/noweh/twitter-api-v2-php/src',
         ),
         'Happyr\\LinkedIn\\' => 
         array (

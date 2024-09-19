@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'React\\Promise\\' => array($vendorDir . '/react/promise/src'),
+    'Noweh\\TwitterApi\\' => array($vendorDir . '/noweh/twitter-api-v2-php/src'),
     'Happyr\\LinkedIn\\' => array($vendorDir . '/happyr/linkedin-api-client/src'),
     'GuzzleHttp\\Stream\\' => array($vendorDir . '/guzzlehttp/streams/src'),
     'GuzzleHttp\\Ring\\' => array($vendorDir . '/guzzlehttp/ringphp/src'),

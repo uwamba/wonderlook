@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5fa6618b95fce8e643349c234427ec47",
+    "content-hash": "435df24f938e97d63abc3cf964e1cf6a",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -424,6 +424,57 @@
                 "source": "https://github.com/Happyr/LinkedIn-API-client/tree/master"
             },
             "time": "2015-12-31T09:54:52+00:00"
+        },
+        {
+            "name": "noweh/twitter-api-v2-php",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/noweh/twitter-api-v2-php.git",
+                "reference": "cf9f9d6cd1b35372a9e034acf8dd42397c2a5adf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/noweh/twitter-api-v2-php/zipball/cf9f9d6cd1b35372a9e034acf8dd42397c2a5adf",
+                "reference": "cf9f9d6cd1b35372a9e034acf8dd42397c2a5adf",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "php": ">=7.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.5",
+                "vlucas/phpdotenv": "^5.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Noweh\\TwitterApi\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Julien Schmitt",
+                    "email": "jschmitt95@protonmail.com"
+                }
+            ],
+            "description": "This library provide methods for sending messages to Twitter and receiving statuses.",
+            "keywords": [
+                "api",
+                "php",
+                "twitter"
+            ],
+            "support": {
+                "issues": "https://github.com/noweh/twitter-api-v2-php/issues",
+                "source": "https://github.com/noweh/twitter-api-v2-php/tree/1.2.0"
+            },
+            "time": "2021-09-23T10:55:21+00:00"
         },
         {
             "name": "pear/http_request2",

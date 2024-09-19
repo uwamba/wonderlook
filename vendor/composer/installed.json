@@ -441,6 +441,60 @@
             "install-path": "../happyr/linkedin-api-client"
         },
         {
+            "name": "noweh/twitter-api-v2-php",
+            "version": "1.2.0",
+            "version_normalized": "1.2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/noweh/twitter-api-v2-php.git",
+                "reference": "cf9f9d6cd1b35372a9e034acf8dd42397c2a5adf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/noweh/twitter-api-v2-php/zipball/cf9f9d6cd1b35372a9e034acf8dd42397c2a5adf",
+                "reference": "cf9f9d6cd1b35372a9e034acf8dd42397c2a5adf",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "php": ">=7.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.5",
+                "vlucas/phpdotenv": "^5.3"
+            },
+            "time": "2021-09-23T10:55:21+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Noweh\\TwitterApi\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Julien Schmitt",
+                    "email": "jschmitt95@protonmail.com"
+                }
+            ],
+            "description": "This library provide methods for sending messages to Twitter and receiving statuses.",
+            "keywords": [
+                "api",
+                "php",
+                "twitter"
+            ],
+            "support": {
+                "issues": "https://github.com/noweh/twitter-api-v2-php/issues",
+                "source": "https://github.com/noweh/twitter-api-v2-php/tree/1.2.0"
+            },
+            "install-path": "../noweh/twitter-api-v2-php"
+        },
+        {
             "name": "pear/http_request2",
             "version": "v2.6.0",
             "version_normalized": "2.6.0.0",
