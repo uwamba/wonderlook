@@ -14,7 +14,7 @@
     TwitterOAuth API via Composer
     https://twitteroauth.com/
 */
-include('vendor/autoload.php');
+include('../vendor/autoload.php');
 
 /* define the classes */
 use Abraham\TwitterOAuth\TwitterOAuth;
