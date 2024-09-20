@@ -64,7 +64,7 @@ function postTweetUpdate($str = '', $mediaArray = null) {
         Make POST request to Twitter API
         https://developer.twitter.com/en/docs/tweets/post-and-engage/api-reference/post-statuses-update
     */
-    $statuses = $connection->post("statuses/update", $arrayCfg);
+    $statuses = $connection->post("", $arrayCfg);
     
     /* return payload */
     return $statuses;
