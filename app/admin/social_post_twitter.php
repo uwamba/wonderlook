@@ -47,7 +47,7 @@ function postTweetUpdate($str = '', $mediaArray = null) {
             
             /* Upload media to twitter API and get media ID back */
             $mediaOBJ = $connection->upload('media/upload', ['media' => $media_path]);
-            
+            echo json_encode( $mediaOBJ);
             /* push uploaded media ID to array */
             array_push($mediaIDS, $mediaOBJ->media_id_string);
         }
