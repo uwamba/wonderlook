@@ -79,7 +79,7 @@ function postTweetUpdate($str = '', $mediaArray = null) {
     $str .= '' . hash('sha1', mt_rand(0, 1000000));
     
     /* media to upload */
-    $mediaToUpload[] = 'post_img/post2.jpeg';
+    $mediaToUpload[]= 'https://wonderlook.rw/app/admin/post_img/post2.jpeg';
 
     /* make request to Twitter API */
     $payLoad = postTweetUpdate($str, $mediaToUpload);
