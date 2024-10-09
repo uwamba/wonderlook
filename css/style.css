@@ -47,7 +47,6 @@ h4,
 h5,
 h6 {
 	margin: 0;
-	color: #111111;
 	font-weight: 400;
 	font-family: "Quantico", sans-serif;
 }
@@ -61,7 +60,7 @@ h2 {
 }
 
 h3 {
-	font-size: 30px;
+	font-size: 35px;
 }
 
 h4 {
@@ -364,12 +363,12 @@ ol {
 }
 
 .nav-menu ul li a {
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 700;
 	text-transform: uppercase;
-	color: #111111;
+	color: #fcf9f9;
 	display: block;
-	padding: 32px 8px 30px;
+	padding: 50px 5px 5px;
 	position: relative;
 	font-family: "Quantico", sans-serif;
 }
@@ -561,6 +560,18 @@ ol {
 	text-transform: uppercase;
 	margin-bottom: 10px;
 }
+.services-item h4 {
+	color: #191039;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+.services-item h5 {
+	color: #191039;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
 
 /*---------------------
   Categories Section
@@ -655,7 +666,7 @@ ol {
 }
 
 .filter-controls {
-	margin-bottom: 43px;
+	margin-bottom: 15px;
 	text-align: center;
 }
 
@@ -2465,6 +2476,7 @@ ol {
 	}
 	.header-section {
 		padding-left: 85px;
+		margin-bottom: 0cm;
 		padding-right: 85px;
 	}
 }
